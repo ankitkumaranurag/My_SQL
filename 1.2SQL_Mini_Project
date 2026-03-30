@@ -1,4 +1,4 @@
-##Level_1_Basics
+# Level_1_Basics
 
 -- 1. Retrieve customer names and emails for email marketing
 -- (This helps the marketing team extract basic customer contact details for campaigns.)
@@ -93,7 +93,7 @@ FROM
     products
 ORDER BY price DESC , name;
 
-##Level_2__Filtering_and_Formatting
+# Level_2__Filtering_and_Formatting
 
 -- 1. Retrieve orders where customer information is missing (possibly due to data migration or deletion)
 -- (Used to identify orphaned orders or test data where customer_id is not linked.)
@@ -148,7 +148,7 @@ WHERE
     stock_quantity = 0;
 
 
-##Level_3__Aggregations
+# Level_3__Aggregations
 
 -- 1. Count the total number of orders placed
 -- (Used by business managers to track order volume over time).
@@ -236,7 +236,7 @@ FROM
 GROUP BY method;
 
 
-##Level_4__Multi-Table_Queries(Joins)
+# Level_4__Multi-Table_Queries(Joins)
 
 -- 1. Retrieve order details along with the customer name (INNER JOIN)
 -- (Used for displaying which customer placed each order).
@@ -322,7 +322,7 @@ FROM
     payments py ON o.order_id = py.order_id;
 
     
-##Level_5__Subqueries
+# Level_5__Subqueries
 
 -- 1. List all products priced above the average product price (Used by pricing analysts to identify premium-priced products).
 
@@ -397,7 +397,7 @@ FROM
 GROUP BY c.customer_id;
 
 
-##Level_6_Set_Operations
+# Level_6_Set_Operations
 
 -- 1. List all customers who have either placed an order or written a product review 
 -- (Used to identify engaged customers from different activity areas).
